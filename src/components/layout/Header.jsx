@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="text-lg flex align-center justify-between py-6 border-b">
 
-      <Link to="/">Camilo B.</Link>
+      <Link to="/">Fabian R.</Link>
 
       <nav className={`flex gap-3${showModal
           ? "flex gap-3 bg-black/90 py-6 w-full flex-col items-center top-[80px] absolute"

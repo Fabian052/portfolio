@@ -3,11 +3,10 @@ const Work = () => {
     <div className="gap-2 bg-black">
 
       <section className="p-4">
-
         <section>
           <section className="bg-black w-full p-4 flex gap-4">
             <h5>Work Experience</h5>
-            <h2>Companies  i have worked for in the past.</h2>
+            <h2>Companies i have worked for in the past.</h2>
           </section>
 
           <section className="">
@@ -34,9 +33,7 @@ const Work = () => {
             <p>I started my design career with Dribble. I was incharge of c'eating illustration for the platform. </p>
           </section>
         </section>
-
       </section>
-
 
       <section className="bg-[#FFF3E4] text-black p-4">
         <h2>Philosophy & values</h2>
