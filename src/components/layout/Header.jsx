@@ -7,27 +7,34 @@ const Header = () => {
   const handleClickShowModal = () => setShowModal(!showModal)
 
   return (
-    <header className="text-lg flex align-center justify-between py-6 border-b">
+    <header className="font-bold sm:text-xl flex align-center justify-between py-5 px-3">
+      <Link className="font-agdasima text-3xl" to="/">Fabian R.</Link>
 
-      <Link to="/">Fabian R.</Link>
+      <nav className={`absolute bg-black/90 flex sm:top-4 sm:right-4 gap-3 ${showModal
+        ? "flex gap-3 bg-black/90 py-6 w-full flex-col items-center top-[75px] right-0 max-w-[min(100%,_350px)] text-xl font-medium rounded-md"
+        : "-top-[600px] -right-[600px]"} transition-all`}>
 
-      <nav className={`flex gap-3${showModal
-          ? "flex gap-3 bg-black/90 py-6 w-full flex-col items-center top-[80px] absolute"
-          : "sm:relative absolute -top-[600px]"}`}>
+        <Link
+          className="text-center hover:bg-white/30 w-1/2 transition-all py-2 px-2"
+          to="/"
+        >Home</Link>
 
-        <Link className="text-center hover:bg-white/30 w-16 transition-bg" to="/work">Work</Link>
+        <Link
+          className="text-center hover:bg-white/30 w-1/2 transition-all py-2 px-2"
+          to="/work">Work</Link>
 
-        <Link to="/skills">Skills</Link>
+        <Link
+          className="text-center hover:bg-white/30 w-1/2 transition-all py-2 px-2"
+          to="/skills">Skills</Link>
 
-        <Link className="bg-[#5221E6] h-full" to="/contact">Contact</Link>
+        <Link
+          className="bg-[#5221E6] text-center hover:bg-white/30 w-1/2 transition-all py-2 px-2"
+          to="/contact">Contact</Link>
       </nav>
 
-      <button className="text-xl sm:hidden">
-        {
-          showModal
-            ? <i onClick={handleClickShowModal} className='bx bx-x'></i>
-            : <i onClick={handleClickShowModal} className='bx bx-menu-alt-right'></i>
-        }
+      <button className="text-3xl sm:hidden">
+        <i onClick={handleClickShowModal} className={`bx ${showModal ? "bx-x" : "bx-menu-alt-right"}`}></i>
+
       </button>
     </header>
   )

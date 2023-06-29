@@ -11,7 +11,7 @@ function App() {
  
 
   return (
-    <div className="bg-black text-white h-full">
+    <div className="font-sen bg-black text-white h-full">
       <Header/>
 
       <Routes >
