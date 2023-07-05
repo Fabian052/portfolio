@@ -6,10 +6,8 @@ import Work from './pages/Work'
 import Contact from './pages/Contact'
 import Header from './components/layout/Header'
 
-
 function App() {
  
-
   return (
     <div className="font-sen bg-black text-white h-full">
       <Header/>
