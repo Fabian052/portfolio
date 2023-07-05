@@ -9,7 +9,7 @@ import Header from './components/layout/Header'
 function App() {
  
   return (
-    <div className="font-sen bg-black text-white h-full">
+    <div className="font-sen bg-black text-white min-h-screen">
       <Header/>
 
       <Routes >
@@ -18,12 +18,12 @@ function App() {
 
         <Route path='/skills' element={<Skills />} />
 
-        <Route path='/work' element={<Work />} />        
+        <Route path='/work' element={<Work />} />
         
         <Route path='/contact' element={<Contact />} />
 
       </Routes>
-      
+
     </div>
   )
 }
