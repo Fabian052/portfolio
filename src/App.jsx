@@ -9,7 +9,7 @@ import Header from './components/layout/Header'
 function App() {
  
   return (
-    <div className="pt-[68px] font-sen bg-black text-white min-h-screen">
+    <div className=" font-sen bg-black text-white min-h-screen">
       <Header/>
 
       <Routes >

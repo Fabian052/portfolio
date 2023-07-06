@@ -20,10 +20,10 @@ const Header = () => {
         <i className={`bx ${showModal ? "bx-x" : "bx-menu-alt-right"}`}></i>
       </button>
       <section
-        className="sm:flex justify-between items-center py-4 px-7 sm:px-10">
-        <Link className="font-agdasima font-bold text-3xl p-2" to="/">Fabian R.</Link>
+        className="sm:flex justify-between items-center py-5 px-7 sm:px-10 bg-black sm:bg-black/0">
+        <Link className="font-agdasima font-bold text-3xl" to="/">Fabian R.</Link>
 
-        <ul className={`sm:flex sm:items-center sm:pb-0 pb-7 absolute sm:static sm:z-auto z-[-1] bg-[rgba(24,_24,_35,_1)] sm:bg-black/0 left-0 w-full sm:w-auto pl-12 sm:pl-0 sm:pr-24 transition-all duration-300 ease-in ${showModal ? "top-16" : "top-[-400px]"}`}>
+        <ul className={`sm:flex sm:items-center sm:pb-0 pb-7 absolute sm:static sm:z-auto z-[-1] bg-[rgba(24,_24,_35,_1)] sm:bg-black/0 left-0 w-full sm:w-auto pl-12 sm:pr-24 md:pr-40 transition-all duration-300 ease-in ${showModal ? "top-16" : "top-[-400px]"}`}>
           {
             links.map((link) => (
               <li key={link.name} className="sm:ml-4 text-xl sm:my-0 my-7">
@@ -33,7 +33,7 @@ const Header = () => {
               </li>
             ))
           }
-          <Link to="/contact" className="sm:ml-3 text-xl sm:bg-[#5221E6] sm:absolute sm:right-4 sm:top-0 sm:right-0 py-6 sm:px-3">
+          <Link to="/contact" className="sm:ml-3 text-xl sm:bg-[#5221E6] sm:absolute sm:right-4 md:right-20 sm:top-0 sm:right-0 py-6 sm:px-3">
             Contact
           </Link>
         </ul>
