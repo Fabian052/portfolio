@@ -1,6 +1,6 @@
 const Work = () => {
   return (
-    <section className="gap-2 bg-black md:relative">
+    <section className="gap-2 bg-black pt-20">
 
       <div className="p-4">
 

@@ -1,7 +1,6 @@
 const Contact = () => {
   return (
-    <section className="">
-
+    <section className="pt-20">
       <div className="grid p-4 gap-3">
         <h2 className="text-2xl font-bold">Other technology</h2>
         <p className="pb-8 text-sm text-[#8491A0]">Each dribble shot is made with love and care. Do check out my work on Dribble. Likes and comments are appreciated.</p>
