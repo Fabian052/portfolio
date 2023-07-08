@@ -7,19 +7,19 @@ const Contact = () => {
         <img src="/images/mobile.png" alt="Products image" />
       </div>
 
-      <article className="bg-[#181823] pb-[100px] relative mt-8">
-        <div className="translate-y-1/2 px-8">
-          <h2 className=" text-2xl font-agdasima font-bold">Fabian R.</h2>
+      <article className="bg-[#181823] pb-[75px] relative mt-8">
+        <div className="pt-8 px-8">
+          <h2 className=" text-3xl font-agdasima font-bold">Fabian R.</h2>
 
-          <ul className="flex gap-2">
+          <ul className="pt-2 text-xl flex gap-2">
             <li>
-              <a href=""><i className='bx bxl-github'></i></a>
+              <a target="_blank" href="https://github.com/Fabian052"><i className='hover:text-white/70 hover:text-2xl transition-all bx bxl-github'></i></a>
             </li>
             <li>
-              <a href=""><i className='text-blue-500 bx bxl-linkedin-square'></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/fabian-ramos-ba3a57210/"><i className='hover:text-blue-400 hover:text-2xl transition-all text-blue-500 bx bxl-linkedin-square'></i></a>
             </li>
             <li>
-              <a href=""><i className='text-red-500 bx bxl-instagram' ></i></a>
+              <a target="_blank" href="https://www.instagram.com/fabiancho2103/"><i className='hover:text-red-400 text-red-500 hover:text-2xl transition-all bx bxl-instagram' ></i></a>
             </li>
           </ul>
         </div>
